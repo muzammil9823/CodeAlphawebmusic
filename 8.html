@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="8.css">
+    <title>Web Music Player</title>
+</head>
+<body>
+    <div class="music-player">
+        <h1>Web Music Player</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search songs...">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div class="categories">
+            <label for="categorySelect">Select Category:</label>
+            <select id="categorySelect">
+                <option value="all">All</option>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="dj">DJ</option>
+                <option value="punjabi">Punjabi</option>
+            </select>
+        </div>
+        <div class="player-controls">
+            <button id="prevBtn">Previous</button>
+            <button id="playPauseBtn">Play</button>
+            <button id="nextBtn">Next</button>
+            <input type="range" id="volumeControl" min="0" max="100" step="1" value="50">
+        </div>
+        <div class="playlist">
+            <h2>Playlist</h2>
+            <ul id="playlist">
+                <li data-src="song1.mp3" data-category="rock">Song 1</li>
+                <li data-src="song2.mp3" data-category="pop">Song 2</li>
+                <li data-src="song3.mp3" data-category="dj">Song 3</li>
+                <li data-src="song3.mp3" data-category="punjabi">Song 4</li>
+            </ul>
+        </div>
+    </div>
+    <script src="8.js"></script>
+</body>
+</html>
